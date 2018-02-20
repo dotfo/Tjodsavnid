@@ -3251,13 +3251,13 @@
 
     function init() {
         function togglePushy() {
-            menuBtn.toggleClass("open"), pushy.hasClass(pushyLeft) ? body.toggleClass(pushyOpenLeft) : body.toggleClass(pushyOpenRight), body.hasClass(pushyOpenLeft) || body.hasClass(pushyOpenRight) ? menuBtn.toggle() : setTimeout(function() {
+            menuBtn.toggleClass("open"), pushy.hasClass(pushyLeft) ? body.toggleClass(pushyOpenLeft) : body.toggleClass(pushyOpenRight), body.hasClass(pushyOpenLeft) || body.hasClass(pushyOpenRight) ? true : setTimeout(function() {
                 //menuBtn.toggle()
             }, menuSpeed)
         }
 
         function openPushyFallback() {
-            menuBtn.toggle(), pushy.hasClass(pushyLeft) ? (body.addClass(pushyOpenLeft), pushy.animate({
+            pushy.hasClass(pushyLeft) ? (body.addClass(pushyOpenLeft), pushy.animate({
                 left: "0px"
             }, menuSpeed), container.animate({
                 left: menuWidth
@@ -3274,7 +3274,7 @@
 
         function closePushyFallback() {
             setTimeout(function() {
-                menuBtn.toggle()
+                //menuBtn.toggle()
             }, menuSpeed), pushy.hasClass(pushyLeft) ? (body.removeClass(pushyOpenLeft), pushy.animate({
                 left: "-" + menuWidth
             }, menuSpeed), container.animate({

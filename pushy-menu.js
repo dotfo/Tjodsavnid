@@ -3252,7 +3252,7 @@
     function init() {
         function togglePushy() {
             menuBtn.toggleClass("open"), pushy.hasClass(pushyLeft) ? body.toggleClass(pushyOpenLeft) : body.toggleClass(pushyOpenRight), body.hasClass(pushyOpenLeft) || body.hasClass(pushyOpenRight) ? menuBtn.toggle() : setTimeout(function() {
-                menuBtn.toggle()
+                //menuBtn.toggle()
             }, menuSpeed)
         }
 

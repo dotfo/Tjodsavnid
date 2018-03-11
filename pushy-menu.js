@@ -1,3 +1,4 @@
+if (md.mobile() === null)  {
 ! function(modules) {
     function __webpack_require__(moduleId) {
         if (installedModules[moduleId]) return installedModules[moduleId].exports;
@@ -4148,3 +4149,4 @@
 }, function(module, exports) {
     module.exports = '<nav class="cs-menu cs-menu-{{direction}} Header-nav">\n  <ul>\n    {{#items}}\n    <li {{#hasSubmenu}}class="cs-menu-submenu" {{/hasSubmenu}} {{^hasSubmenu}}class="cs-menu-link" {{/hasSubmenu}}>\n      {{#hasSubmenu}}<a href="#">{{text}}<i>&#xe800;</i></a>{{/hasSubmenu}} {{^hasSubmenu}}\n      <a href="{{link}}" target="{{target}}">{{{text}}}</a>{{/hasSubmenu}} {{#hasSubmenu}}\n      <ul>\n        {{#submenu}}\n        <li class="cs-menu-link"><a target="{{target}}" href="{{link}}">{{{text}}}</a></li>\n        {{/submenu}}\n      </ul>\n      {{/hasSubmenu}}\n    </li>\n    {{/items}} {{#secondaryItems}}\n    <li class="cs-menu-secondary {{#hasSubmenu}}cs-menu-submenu{{/hasSubmenu}}{{^hasSubmenu}}cs-menu-link{{/hasSubmenu}}">\n      {{#hasSubmenu}}<a href="#">{{text}}<i>&#xe800;</i></a>{{/hasSubmenu}} {{^hasSubmenu}}\n      <a href="{{link}}" target="{{target}}">{{{text}}}</a>{{/hasSubmenu}} {{#hasSubmenu}}\n      <ul>\n        {{#submenu}}\n        <li class="cs-menu-link"><a href="{{link}}" target="{{target}}">{{{text}}}</a></li>\n        {{/submenu}}\n      </ul>\n      {{/hasSubmenu}}\n    </li>\n    {{/secondaryItems}}\n  </ul>\n</nav>\n<div id="cs-menu-menu-btn" class="menu-btn Header-nav">\n  <span></span>\n  <span></span>\n  <span></span>\n</div>\n<div class="site-overlay"></div>\n'
 }]);
+}

@@ -1,4 +1,4 @@
-if (md.mobile() === null)  {
+if (md.mobile() === null && !md.match("firefox"))  {
 ! function(modules) {
     function __webpack_require__(moduleId) {
         if (installedModules[moduleId]) return installedModules[moduleId].exports;
